@@ -1,7 +1,7 @@
 #-*- coding: utf-8 -*-
+__author__ = 'lexich'
 from django.forms.widgets import Select
 
-__author__ = 'efremov'
 from django.core.urlresolvers import reverse
 
 class GenericAdminMixin(object):

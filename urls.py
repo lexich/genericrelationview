@@ -1,7 +1,8 @@
 #-*- coding: utf-8 -*-
+__author__ = 'lexich'
 from genericrelationview.views import get_generickey_json
 
-__author__ = 'efremov'
+
 
 from django.conf.urls import patterns, url
 

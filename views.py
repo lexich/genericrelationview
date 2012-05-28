@@ -1,4 +1,5 @@
-# Create your views here.
+#-*- coding: utf-8 -*-
+__author__ = 'lexich'
 from django.contrib.contenttypes.models import ContentType
 from django.core import serializers
 from django.http import HttpResponse, Http404
