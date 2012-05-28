@@ -1,10 +1,3 @@
-/**
- * Created with PyCharm.
- * User: efremov
- * Date: 25.05.12
- * Time: 14:11
- * To change this template use File | Settings | File Templates.
- */
 (function($){
     window.generic_view_json = function(self,url,selector){
         var init = $(self).data("init");
