@@ -35,6 +35,6 @@ class GenericAdminMixin(object):
 
     class Media:
         js = (
-            'js/jquery-1.7.1.js',
+            'js/jquery-1.7.2.min.js',
             'js/generickey.js',
         )
