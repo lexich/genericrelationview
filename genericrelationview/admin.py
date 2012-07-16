@@ -1,6 +1,5 @@
 #-*- coding: utf-8 -*-
 __author__ = 'lexich'
-from django.forms.widgets import Select
 
 from django.core.urlresolvers import reverse
 
@@ -35,6 +34,5 @@ class GenericAdminMixin(object):
 
     class Media:
         js = (
-            'js/jquery-1.7.2.min.js',
             'js/generickey.js',
         )
