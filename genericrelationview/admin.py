@@ -34,5 +34,5 @@ class GenericAdminMixin(object):
 
     class Media:
         js = (
-            'js/generickey.js',
+            'js/admin/generickey.js',
         )
