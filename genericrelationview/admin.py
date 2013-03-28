@@ -14,18 +14,18 @@ class GenericAdminMixin(object):
         request = kwargs.pop("request", None)
         for (content_type, object_id) in self.generic_pairs:
             if db_field.name == content_type:
-                return self.formfield_for_content_type(db_field, object_id,**kwargs)
+                return self.formfield_for_content_type(db_field, object_id, content_type, **kwargs)
             elif db_field.name == object_id:
                 return self.formfield_for_object_id(db_field, **kwargs)
         return super(GenericAdminMixin, self).formfield_for_dbfield(db_field, **save_kwargs)
 
-    def formfield_for_content_type(self, db_field, object_id, **kwargs):
+    def formfield_for_content_type(self, db_field, object_id, content_type, **kwargs):
         formfield = super(GenericAdminMixin, self).formfield_for_foreignkey(db_field, **kwargs)
         widget = formfield.widget
         url = reverse('generickey_json')
         widget.attrs.update({
-            "onchange" : "generic_view_json(this,'{0}','id_{1}');".format(url,object_id),
-            'class' : 'generic_view'
+            "onchange": "generic_view_json(this,'{0}','{1}','{2}');".format(url, object_id, content_type),
+            'class': 'generic_view'
         })
         return formfield
 

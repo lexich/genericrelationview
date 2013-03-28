@@ -1,10 +1,11 @@
+'strict mode';
 (function($){
 
-    window.generic_view_json = function(self,url,selector){
+    window.generic_view_json = function(self,url,object_id, content_type){
         var init = $(self).data("init");
 
         var id = self.value;
-        var $drop = $("#"+selector);
+        var $drop = $("#id_"+object_id);
         var value = null;
         if( init != null ){
             if( init['id'] == id ){
@@ -21,7 +22,7 @@
 
         if( !$select.is("select")){
             $select = $("<select/>").attr({
-                id : selector,
+                id : object_id,
                 name : $drop.attr('name')
             }).addClass("rel-generic");
             $drop.replaceWith($select);
