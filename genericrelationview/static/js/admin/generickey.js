@@ -42,7 +42,7 @@
           }
           $select.append(option);
         }
-        $select.trigger("generickey:list_update");
+        $select.parents("fieldset:first").trigger("generickey_update");
       });
     }
   };
