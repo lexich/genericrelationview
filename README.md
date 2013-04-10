@@ -3,7 +3,7 @@ genericrelationview
 
 #About
 
-admin interface for GenericForeignKey fields
+django admin interface for GenericForeignKey fields
 
 ##Usage
 
