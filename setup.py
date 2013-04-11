@@ -10,6 +10,6 @@ setup(
     license='BSD',
     author='lexich',
     author_email='lexich121@gmail.com',
-    description='admin interface for GenericForeignKey fields',
+    description='django admin interface for GenericForeignKey fields',
     long_description = open("README.md","r").read()
 )
