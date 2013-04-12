@@ -1,27 +1,27 @@
-genericrelationview
-===================
+django-genericrelationview
+==========================
 
 #About
 
 django admin interface for GenericForeignKey fields
 
-#Insall
+#Install
 
-pip install django-genericrelationview
+> pip install django-genericrelationview
 
 or
 
-easy_install django-genericrelationview
+> easy_install django-genericrelationview
 
 
 ##Usage
 
 ###in settings.py
 
-INSTALLED_APPS = ( ... ,'genericrelationview',)
+> INSTALLED_APPS = ( ... ,'genericrelationview',)
 
 ###in url.py
-urlpatterns =( ..., url(r"^your_path/", include("genericrelationview.urls")),)
+> urlpatterns =( ..., url(r"^your_path/", include("genericrelationview.urls")),)
 
 ###in admin.py
 for ModelAdmin class using GenericAdminMixin as mixin
