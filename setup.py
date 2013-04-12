@@ -2,7 +2,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='genericrelationview',
+    name='django-genericrelationview',
     version='0.0.1',
     include_package_data=True,
     packages=find_packages(),
