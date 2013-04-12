@@ -5,6 +5,15 @@ genericrelationview
 
 django admin interface for GenericForeignKey fields
 
+#Insall
+
+pip install django-genericrelationview
+
+or
+
+easy_install django-genericrelationview
+
+
 ##Usage
 
 ###in settings.py
