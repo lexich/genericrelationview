@@ -1,12 +1,10 @@
-#-*- coding: utf-8 -*-
-__author__ = 'lexich'
+# -*- coding: utf-8 -*-
 from genericrelationview.views import get_generickey_json
-
-
-
 from django.conf.urls import patterns, url
 
-urlpatterns = patterns('',
-    url(r'^generictype$', get_generickey_json , name='generickey_json', ),
-)
+__author__ = 'lexich'
 
+urlpatterns = patterns(
+    '',
+    url(r'^generictype$', get_generickey_json, name='generickey_json')
+)
