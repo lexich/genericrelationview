@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='django-genericrelationview',
-    version='0.0.2',
+    version='0.1.0',
     include_package_data=True,
     packages=find_packages(),
     url='https://github.com/lexich/genericrelationview',
