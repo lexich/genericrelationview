@@ -5,6 +5,5 @@ from django.conf.urls import url
 __author__ = 'lexich'
 
 urlpatterns = [
-    '',
     url(r'^generictype$', get_generickey_json, name='generickey_json')
 ]
